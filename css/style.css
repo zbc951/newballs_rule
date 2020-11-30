@@ -163,7 +163,8 @@ html {
         border-radius: 12px 12px 0px 0px; }
         html body main article .rulebar p {
           line-height: 40px;
-          padding-left: 30px; }
+          padding-left: 30px;
+          font-size: 15px; }
         html body main article .rulebar .rwdbtn {
           display: none;
           width: 12%;
