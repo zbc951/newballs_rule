@@ -281,17 +281,40 @@ $(function(){
 //                 history.go(-1);
 //             };
 //         }
-//     });
+//   }  );
 // })
 
-function isMobile() {
+// function isMobile() {
 
-    try{ document.createEvent("TouchEvent"); return true; }
+//     try{ document.createEvent("TouchEvent"); return true; }
   
-    catch(e){ return false;}
+//     catch(e){ return false;}
 
-  }
+//   }
 
-if(isMobile()){
-    window.location.href = "./rwdNav.html";
-}
+// if(isMobile()){
+//     window.location.href = "../html/rwdNav.html";
+//     if(window.location.href.indexOf("rwdNav") == 0 ){
+//         stop();
+//     }
+// }
+
+$(function(){
+    $(window).resize(function(){
+        var btnWdth=$(window).width();
+        if(btnWdth <= 640){
+            if(localStorage.getItem('mobile') == 1){return} //不跑
+            window.location.href = "./rwdNav.html";
+            if(window.location.href.indexOf("index") > 0 ){
+                window.location.href = "./html/rwdNav.html";
+            };
+            localStorage.setItem('mobile', 1); //mobile == 1 手機板
+        };
+        if(btnWdth > 640){
+            if(window.location.href.indexOf("rwdNav") > 0 ){
+                history.go(-1);
+            };
+             localStorage.setItem('mobile', 0); //mobile == 0 電腦版
+        }
+    });
+})

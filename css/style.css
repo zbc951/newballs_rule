@@ -391,7 +391,7 @@ html {
             color: #ff0000; }
     @media only screen and (max-width: 1349px) {
       html body main article .rulebox.balls .box .btnbar {
-        padding: 10px 0px 0px; }
+        padding: 12px 0px 5px; }
         html body main article .rulebox.balls .box .btnbar.longlen button {
           width: 90px;
           margin: 0px 4px 10px 4px; }
