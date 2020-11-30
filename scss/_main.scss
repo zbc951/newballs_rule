@@ -79,10 +79,13 @@ main {
                         height: 0px;
                     }
                     &::-webkit-scrollbar-thumb {
-                        background:#556de7;
+                        background: #556de7;
+                        border-radius: 30px;
                     }
                     &::-webkit-scrollbar-track {
                         background: transparent;
+                        background: #d6d6d6;
+                        border-radius: 0px 0px 15px 15px;
                     }
                     table {
                         width: 1202px;
@@ -144,8 +147,9 @@ main {
                     }
                     //主體
                     .ballsrule {
-                        width: 100%;
+                        width: 95%;
                         height: auto;
+                        margin: 0px auto;
                         h2 {
                             font-size: 14px;
                             color: #4d515d;
@@ -180,7 +184,7 @@ main {
                                 margin-top: 15px;
                                 font-size: 14px;
                                 &.lastLi {
-                                    padding-bottom: 15px;
+                                    padding-bottom: 40px;
                                 }
                             }
                         }
@@ -199,10 +203,14 @@ main {
                                 height: 0px;
                             }
                             &::-webkit-scrollbar-thumb {
-                                background: #556de7;
+                                background:#556de7;
+                                border-radius: 30px;
+                                // #d38a4a
                             }
                             &::-webkit-scrollbar-track {
                                 background: transparent;
+                                background: #d6d6d6;
+                                border-radius: 0px 0px 15px 15px;
                             }
                             &.overflow {
                                 overflow-x: auto;
@@ -213,6 +221,7 @@ main {
                                 height: auto;
                                 border-radius: 12px;
                                 font-size: 15px;
+                                overflow: hidden;
                                 tr {
                                     th,td {
                                         vertical-align: middle;
@@ -276,6 +285,7 @@ main {
                                 }
                                 //demo版
                                 &.demo {
+                                    width: 100%;
                                     tr {
                                         th {
                                             text-align: left;

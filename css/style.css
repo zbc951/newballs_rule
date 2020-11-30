@@ -212,9 +212,12 @@ html {
           html body main article .rulebox.convert div::-webkit-scrollbar {
             height: 0px; }
           html body main article .rulebox.convert div::-webkit-scrollbar-thumb {
-            background: #556de7; }
+            background: #556de7;
+            border-radius: 30px; }
           html body main article .rulebox.convert div::-webkit-scrollbar-track {
-            background: transparent; }
+            background: transparent;
+            background: #d6d6d6;
+            border-radius: 0px 0px 15px 15px; }
           html body main article .rulebox.convert div table {
             width: 1202px;
             border-radius: 10px;
@@ -256,8 +259,9 @@ html {
               html body main article .rulebox.balls .box .btnbar button.longword {
                 width: auto; }
           html body main article .rulebox.balls .box .ballsrule {
-            width: 100%;
-            height: auto; }
+            width: 95%;
+            height: auto;
+            margin: 0px auto; }
             html body main article .rulebox.balls .box .ballsrule h2 {
               font-size: 14px;
               color: #4d515d;
@@ -288,7 +292,7 @@ html {
                 margin-top: 15px;
                 font-size: 14px; }
                 html body main article .rulebox.balls .box .ballsrule ul li.lastLi {
-                  padding-bottom: 15px; }
+                  padding-bottom: 40px; }
             html body main article .rulebox.balls .box .ballsrule a {
               color: #337ab7; }
             html body main article .rulebox.balls .box .ballsrule .rtable {
@@ -301,9 +305,12 @@ html {
               html body main article .rulebox.balls .box .ballsrule .rtable::-webkit-scrollbar {
                 height: 0px; }
               html body main article .rulebox.balls .box .ballsrule .rtable::-webkit-scrollbar-thumb {
-                background: #556de7; }
+                background: #556de7;
+                border-radius: 30px; }
               html body main article .rulebox.balls .box .ballsrule .rtable::-webkit-scrollbar-track {
-                background: transparent; }
+                background: transparent;
+                background: #d6d6d6;
+                border-radius: 0px 0px 15px 15px; }
               html body main article .rulebox.balls .box .ballsrule .rtable.overflow {
                 overflow-x: auto;
                 overflow-y: hidden; }
@@ -311,7 +318,8 @@ html {
                 width: 1205px;
                 height: auto;
                 border-radius: 12px;
-                font-size: 15px; }
+                font-size: 15px;
+                overflow: hidden; }
                 html body main article .rulebox.balls .box .ballsrule .rtable table tr th, html body main article .rulebox.balls .box .ballsrule .rtable table tr td {
                   vertical-align: middle; }
                 html body main article .rulebox.balls .box .ballsrule .rtable table.normal tr {
@@ -351,26 +359,28 @@ html {
                     border: solid 1px #e0e3f3; }
                 html body main article .rulebox.balls .box .ballsrule .rtable table.normal.pad10 tr td {
                   padding: 10px 0px; }
-                html body main article .rulebox.balls .box .ballsrule .rtable table.demo tr th {
-                  text-align: left;
-                  padding: 8px 0px 8px 50px;
-                  position: relative;
-                  background: #f0b37d;
-                  color: #fff; }
-                  html body main article .rulebox.balls .box .ballsrule .rtable table.demo tr th::before {
-                    content: "";
-                    position: absolute;
-                    top: 7px;
-                    left: 20px;
-                    width: 15px;
-                    height: 15px;
-                    background: #fff;
-                    border-radius: 15px; }
-                html body main article .rulebox.balls .box .ballsrule .rtable table.demo tr td {
-                  padding: 15px;
-                  background: #ffedcd;
-                  color: #4d515d;
-                  line-height: 24px; }
+                html body main article .rulebox.balls .box .ballsrule .rtable table.demo {
+                  width: 100%; }
+                  html body main article .rulebox.balls .box .ballsrule .rtable table.demo tr th {
+                    text-align: left;
+                    padding: 8px 0px 8px 50px;
+                    position: relative;
+                    background: #f0b37d;
+                    color: #fff; }
+                    html body main article .rulebox.balls .box .ballsrule .rtable table.demo tr th::before {
+                      content: "";
+                      position: absolute;
+                      top: 7px;
+                      left: 20px;
+                      width: 15px;
+                      height: 15px;
+                      background: #fff;
+                      border-radius: 15px; }
+                  html body main article .rulebox.balls .box .ballsrule .rtable table.demo tr td {
+                    padding: 15px;
+                    background: #ffedcd;
+                    color: #4d515d;
+                    line-height: 24px; }
             html body main article .rulebox.balls .box .ballsrule .deal-rule, html body main article .rulebox.balls .box .ballsrule .single-rule, html body main article .rulebox.balls .box .ballsrule .half-rule, html body main article .rulebox.balls .box .ballsrule .ground-rule, html body main article .rulebox.balls .box .ballsrule .complex-rule,
             html body main article .rulebox.balls .box .ballsrule .score-rule, html body main article .rulebox.balls .box .ballsrule .let-rule, html body main article .rulebox.balls .box .ballsrule .touch-rule, html body main article .rulebox.balls .box .ballsrule .roll-rule, html body main article .rulebox.balls .box .ballsrule .correct-rule,
             html body main article .rulebox.balls .box .ballsrule .half-all-rule, html body main article .rulebox.balls .box .ballsrule .all-in-rule, html body main article .rulebox.balls .box .ballsrule .standard-rule, html body main article .rulebox.balls .box .ballsrule .champion-rule, html body main article .rulebox.balls .box .ballsrule .SC-rule,
@@ -390,6 +400,10 @@ html {
           html body main article .rulebox p.wd_red {
             color: #ff0000; }
     @media only screen and (max-width: 1349px) {
+      html body main article .rulebox.convert div::-webkit-scrollbar {
+        height: 12px; }
+      html body main article .rulebox.balls .box .ballsrule .rtable::-webkit-scrollbar {
+        height: 12px; }
       html body main article .rulebox.balls .box .btnbar {
         padding: 12px 0px 5px; }
         html body main article .rulebox.balls .box .btnbar.longlen button {
@@ -404,10 +418,10 @@ html {
         text-align: center; } }
     @media only screen and (max-width: 1023px) {
       html body header article .rulebtn {
-        width: 80%;
+        width: 96%;
         margin: 0px auto; }
         html body header article .rulebtn a {
-          width: 80px;
+          width: 97px;
           margin-right: 2px; } }
     @media only screen and (max-width: 935px) {
       html body header article .rulebtn {
@@ -429,15 +443,11 @@ html {
             display: block; }
         html body main article .rulebox {
           border-radius: 0px; }
-          html body main article .rulebox.convert div::-webkit-scrollbar {
-            height: 3px; }
           html body main article .rulebox.balls .box {
             width: 94%; }
             html body main article .rulebox.balls .box .ballsrule {
               width: 90%;
               margin: 0px auto; }
-              html body main article .rulebox.balls .box .ballsrule .rtable::-webkit-scrollbar {
-                height: 3px; }
               html body main article .rulebox.balls .box .ballsrule .rtable table {
                 width: 900px; }
             html body main article .rulebox.balls .box .btnbar {
@@ -521,7 +531,7 @@ html {
               height: 20%;
               border-style: solid;
               border-color: transparent transparent #4d4d4d #4d515d;
-              border-radius: 5px;
+              border-radius: 5px 0px 5px 0px;
               left: 40%;
               top: 50%;
               -webkit-transform: translateY(-50%) rotate(45deg);
@@ -541,7 +551,7 @@ html {
           height: 6px;
           border-style: solid;
           border-color: #4d4d4d #4d4d4d transparent transparent;
-          border-radius: 5px;
+          border-radius: 5px 0px 5px 0px;
           right: 10%;
           top: 50%;
           -webkit-transform: translateY(-50%) rotate(45deg);

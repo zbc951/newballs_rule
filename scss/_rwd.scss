@@ -2,8 +2,22 @@
     main {
         article {
             .rulebox {
+                &.convert {
+                    div {
+                        &::-webkit-scrollbar {
+                            height: 12px;
+                        }
+                    }
+                }
                 &.balls {
                     .box {
+                        .ballsrule {
+                            .rtable {
+                                &::-webkit-scrollbar {
+                                    height: 12px;
+                                }
+                            }
+                        }
                         .btnbar {
                             padding: 12px 0px 5px;
                             &.longlen {
@@ -37,10 +51,10 @@
     header {
         article {
             .rulebtn {
-                width: 80%;
+                width: 96%;
                 margin: 0px auto;
                 a {
-                    width: 80px;
+                    width: 97px;
                     margin-right: 2px;
                 }
             }
@@ -79,13 +93,6 @@
             }
             .rulebox {
                 border-radius: 0px;
-                &.convert {
-                    div {
-                        &::-webkit-scrollbar {
-                            height: 3px;
-                        }
-                    }
-                }
                 &.balls {
                     .box {
                         width: 94%;
@@ -93,9 +100,6 @@
                             width: 90%;
                             margin: 0px auto;
                             .rtable {
-                                &::-webkit-scrollbar {
-                                    height: 3px;
-                                }
                                 table {
                                     width: 900px;
                                 }
