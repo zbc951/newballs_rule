@@ -283,16 +283,3 @@ $(function(){
         }
     });
 })
-
-//rtable overflow
-
-$(function(){
-    $(window).resize(function(){
-        var btnWdth=$(window).width();
-        if(btnWdth < 1360){
-            $('.rtable').addClass('flowX')
-        } else {
-            $('.rtable').removeClass('flowX')
-        }
-    });
-})
