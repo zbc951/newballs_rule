@@ -163,7 +163,8 @@ html {
         border-radius: 12px 12px 0px 0px; }
         html body main article .rulebar p {
           line-height: 40px;
-          padding-left: 30px; }
+          padding-left: 30px;
+          font-size: 15px; }
         html body main article .rulebar .rwdbtn {
           display: none;
           width: 12%;
@@ -189,11 +190,13 @@ html {
         overflow-x: hidden;
         overflow-y: auto; }
         html body main article .rulebox::-webkit-scrollbar {
-          width: 3px; }
+          width: 8px; }
         html body main article .rulebox::-webkit-scrollbar-thumb {
-          background: #000; }
+          background: #b68c67;
+          border-radius: 100px; }
         html body main article .rulebox::-webkit-scrollbar-track {
-          background: transparent; }
+          background: transparent;
+          background: #d6d6d6; }
         html body main article .rulebox.gamerule p {
           padding: 30px; }
           html body main article .rulebox.gamerule p:nth-child(even) {
@@ -206,9 +209,9 @@ html {
           overflow-y: hidden;
           overflow-x: auto; }
           html body main article .rulebox.convert div::-webkit-scrollbar {
-            height: 3px; }
+            height: 0px; }
           html body main article .rulebox.convert div::-webkit-scrollbar-thumb {
-            background: #000; }
+            background: #556de7; }
           html body main article .rulebox.convert div::-webkit-scrollbar-track {
             background: transparent; }
           html body main article .rulebox.convert div table {
@@ -295,9 +298,9 @@ html {
               border-radius: 12px;
               margin-bottom: 15px; }
               html body main article .rulebox.balls .box .ballsrule .rtable::-webkit-scrollbar {
-                height: 3px; }
+                height: 0px; }
               html body main article .rulebox.balls .box .ballsrule .rtable::-webkit-scrollbar-thumb {
-                background: #000; }
+                background: #556de7; }
               html body main article .rulebox.balls .box .ballsrule .rtable::-webkit-scrollbar-track {
                 background: transparent; }
               html body main article .rulebox.balls .box .ballsrule .rtable.overflow {
@@ -420,20 +423,26 @@ html {
           border-radius: 0px; }
           html body main article .rulebar p {
             float: left;
-            padding-left: 10px; }
+            padding-left: 5px; }
           html body main article .rulebar .rwdbtn {
             display: block; }
         html body main article .rulebox {
           border-radius: 0px; }
-          html body main article .rulebox.balls .box .ballsrule .rtable table {
-            width: 900px; }
-          html body main article .rulebox.balls .box .btnbar {
-            width: 90%;
-            margin: 0px auto; }
-            html body main article .rulebox.balls .box .btnbar.longlen button {
-              margin: 0px 0px 10px 0px; }
-            html body main article .rulebox.balls .box .btnbar button {
-              margin: 0px 0px 10px 0px; }
+          html body main article .rulebox.convert div::-webkit-scrollbar {
+            height: 3px; }
+          html body main article .rulebox.balls .box {
+            width: 75%; }
+            html body main article .rulebox.balls .box .ballsrule .rtable::-webkit-scrollbar {
+              height: 3px; }
+            html body main article .rulebox.balls .box .ballsrule .rtable table {
+              width: 900px; }
+            html body main article .rulebox.balls .box .btnbar {
+              width: 90%;
+              margin: 0px auto; }
+              html body main article .rulebox.balls .box .btnbar.longlen button {
+                margin: 0px 0px 10px 0px; }
+              html body main article .rulebox.balls .box .btnbar button {
+                margin: 0px 0px 10px 0px; }
       html body nav.rwd {
         display: block; } }
     html body nav {

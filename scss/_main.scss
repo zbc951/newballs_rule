@@ -13,6 +13,7 @@ main {
             p {
                 line-height: 40px;
                 padding-left: 30px;
+                font-size: 15px;
             }
             .rwdbtn {
                 display: none;
@@ -45,13 +46,15 @@ main {
             overflow-x: hidden;
             overflow-y: auto;
             &::-webkit-scrollbar {
-                width: 3px;
+                width: 8px;
             }
             &::-webkit-scrollbar-thumb {
-                background: #000;
+                background:#b68c67;
+                border-radius: 100px;
             }
             &::-webkit-scrollbar-track {
                 background: transparent;
+                background: #d6d6d6;
             }
             //for遊戲說明
             &.gamerule {
@@ -72,10 +75,10 @@ main {
                     overflow-y: hidden;
                     overflow-x: auto;
                     &::-webkit-scrollbar {
-                        height: 3px;
+                        height: 0px;
                     }
                     &::-webkit-scrollbar-thumb {
-                        background: #000;
+                        background:#556de7;
                     }
                     &::-webkit-scrollbar-track {
                         background: transparent;
@@ -192,10 +195,10 @@ main {
                             border-radius: 12px;
                             margin-bottom: 15px;
                             &::-webkit-scrollbar {
-                                height: 3px;
+                                height: 0px;
                             }
                             &::-webkit-scrollbar-thumb {
-                                background: #000;
+                                background: #556de7;
                             }
                             &::-webkit-scrollbar-track {
                                 background: transparent;
