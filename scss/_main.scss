@@ -17,22 +17,23 @@ main {
             }
             .rwdbtn {
                 display: none;
-                width: 12%;
-                height: 100%;
+                width: 40px;
+                height: 70%;
                 float: left;
                 background: transparent;
+                margin: 5px 0px 0px 10px;
                 span {
                     display: block;
                     width: 80%;
-                    height: 5px;
+                    height: 3px;
                     background: rgb(228, 228, 228);
                     margin: 0px auto;
                     border-radius: 30px;
                     &:first-child {
-                        margin-bottom: 5px;
+                        margin-bottom: 4px;
                     }
                     &:last-child {
-                        margin-top: 5px;
+                        margin-top: 4px;
                     }
                 }
             }

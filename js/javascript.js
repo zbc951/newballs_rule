@@ -266,24 +266,32 @@ $(function(){
     })
 })
 
-//手機版第一頁切換
-$(function(){
-    $(window).resize(function(){
-        var btnWdth=$(window).width();
-        if(btnWdth <= 640){
-            window.location.href = "./rwdNav.html";
-            if(window.location.href.indexOf("index") > 0 ){
-                window.location.href = "./html/rwdNav.html";
-            };
-        };
-        if(btnWdth > 640){
-            if(window.location.href.indexOf("rwdNav") > 0 ){
-                history.go(-1);
-            };
-        }
-    });
-})
+// //手機版第一頁切換
+// $(function(){
+//     $(window).resize(function(){
+//         var btnWdth=$(window).width();
+//         if(btnWdth <= 640){
+//             window.location.href = "./rwdNav.html";
+//             if(window.location.href.indexOf("index") > 0 ){
+//                 window.location.href = "./html/rwdNav.html";
+//             };
+//         };
+//         if(btnWdth > 640){
+//             if(window.location.href.indexOf("rwdNav") > 0 ){
+//                 history.go(-1);
+//             };
+//         }
+//     });
+// })
+
+function isMobile() {
+
+    try{ document.createEvent("TouchEvent"); return true; }
+  
+    catch(e){ return false;}
+
+  }
 
 if(isMobile()){
-    
+    window.location.href = "./rwdNav.html";
 }

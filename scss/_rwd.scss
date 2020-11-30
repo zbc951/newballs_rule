@@ -9,12 +9,12 @@
                             &.longlen {
                                 button {
                                     width: 90px;
-                                    margin: 0px 5px 10px 0px;
+                                    margin: 0px 4px 10px 4px;
                                 }
                             }
                             button {
                                 width: 90px;
-                                margin: 0px 5px 10px 0px;
+                                margin: 0px 4px 10px 4px;
                                 font-size: 12px;
                             }
                         }
@@ -88,8 +88,10 @@
                 }
                 &.balls {
                     .box {
-                        width: 75%;
+                        width: 94%;
                         .ballsrule {
+                            width: 90%;
+                            margin: 0px auto;
                             .rtable {
                                 &::-webkit-scrollbar {
                                     height: 3px;
@@ -100,15 +102,19 @@
                             }
                         }
                         .btnbar {
-                            width: 90%;
+                            display: inline-block;
+                            width: 100%;
                             margin: 0px auto;
                             &.longlen {
                                 button {
-                                    margin: 0px 0px 10px 0px;
+                                    // margin: 0px 0px 10px 0px;
+                                    width: 30%;
                                 }
                             }
                             button {
-                                margin: 0px 0px 10px 0px;
+                                // margin: 0px 0px 10px 0px;
+                                float: left;
+                                width: 30%;
                             }
                         }
                     }
