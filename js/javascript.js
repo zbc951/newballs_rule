@@ -270,7 +270,7 @@ $(function(){
 $(function(){
     $(window).resize(function(){
         var btnWdth=$(window).width();
-        if(btnWdth <= 640 && btnWdth >620){
+        if(btnWdth <= 640){
             window.location.href = "./rwdNav.html";
             if(window.location.href.indexOf("index") > 0 ){
                 window.location.href = "./html/rwdNav.html";
