@@ -270,34 +270,34 @@ $(function(){
 //   }  );
 // })
 
-function isMobile() {
+// function isMobile() {
 
-    try{ document.createEvent("TouchEvent"); return true; }
+//     try{ document.createEvent("TouchEvent"); return true; }
   
-    catch(e){ return false;}
+//     catch(e){ return false;}
 
-}
+// }
 
-if(isMobile()){
-    if(localStorage.getItem('mobile') == 1){return} //不跑
-    window.location.href = "./rwdNav.html";
-    if(window.location.href.indexOf("index") > 0 ){
-        window.location.href = "./html/rwdNav.html";
-    };
-    localStorage.setItem('mobile', 1); //mobile == 1 手機板
-}
+// if(isMobile()){
+//     if(localStorage.getItem('mobile') == 1){return} //不跑
+//     window.location.href = "./rwdNav.html";
+//     if(window.location.href.indexOf("index") > 0 ){
+//         window.location.href = "./html/rwdNav.html";
+//     };
+//     localStorage.setItem('mobile', 1); //mobile == 1 手機板
+// }
 
-function isMobileDevice(){
-    var mobileDevices = ['Android', 'webOS', 'iPhone', 'iPad', 'iPod', 'BlackBerry', 'Windows Phone']
-    var isMobileDevice=false
-    for(var i=0;i<mobileDevice.length;i++){
-        if(navigator.userAgent.match(mobileDevices[i])){
-            isMobileDevice=true
-            if(isMobileDevice = true) {
-                window.location.href = "../html/rwdNav.html";
-                break;
-            }
-        }
-    }
-    return isMobileDevice
-}
+// function isMobileDevice(){
+//     var mobileDevices = ['Android', 'webOS', 'iPhone', 'iPad', 'iPod', 'BlackBerry', 'Windows Phone']
+//     var isMobileDevice=false
+//     for(var i=0;i<mobileDevice.length;i++){
+//         if(navigator.userAgent.match(mobileDevices[i])){
+//             isMobileDevice=true
+//             if(isMobileDevice = true) {
+//                 window.location.href = "../html/rwdNav.html";
+//                 break;
+//             }
+//         }
+//     }
+//     return isMobileDevice
+// }
