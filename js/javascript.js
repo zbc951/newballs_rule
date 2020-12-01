@@ -284,6 +284,6 @@ $(function(){
 
 $(function(){
     if(window.location.href.indexOf('#') > 0 ){
-        $('body').addClass('ffff')
+        $('.rwd').addClass('slide');
     };
 })
