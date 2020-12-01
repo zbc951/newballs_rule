@@ -76,7 +76,7 @@ main {
                     overflow-y: hidden;
                     overflow-x: auto;
                     &::-webkit-scrollbar {
-                        height: 0px;
+                        height: 12px;
                     }
                     &::-webkit-scrollbar-thumb {
                         background: #556de7;
@@ -121,7 +121,7 @@ main {
                         border-bottom: solid 1px #d2d2d2;
                         &.longlen {
                             button {
-                                width: 102px;
+                                width: 101px;
                             }
                         }
                         button {
@@ -200,7 +200,7 @@ main {
                             border-radius: 12px;
                             margin-bottom: 15px;
                             &::-webkit-scrollbar {
-                                height: 0px;
+                                height: 12px;
                             }
                             &::-webkit-scrollbar-thumb {
                                 background:#556de7;
@@ -212,19 +212,16 @@ main {
                                 background: #d6d6d6;
                                 border-radius: 0px 0px 15px 15px;
                             }
-                            &.overflow {
-                                overflow-x: auto;
-                                overflow-y: hidden;
-                            }
                             table {
                                 width: 1205px;
                                 height: auto;
-                                border-radius: 12px;
+                                border-radius: 10px 10px 0px 0px;
                                 font-size: 15px;
                                 overflow: hidden;
                                 tr {
                                     th,td {
                                         vertical-align: middle;
+                                        word-break: break-all;
                                     }
                                 }
                                 //一般版
@@ -332,7 +329,7 @@ main {
                 color: #4d515d;
                 line-height: 24px;
                 &.lastP {
-                    padding-bottom: 20px;
+                    padding-bottom: 40px;
                 }
                 &.wd_red {
                     color: #ff0000;

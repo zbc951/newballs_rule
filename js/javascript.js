@@ -44,20 +44,6 @@ $(function () {
     }
 });
 
-//rulebtn+table
-$(function(){
-    $(window).resize(function() {
-        var btnWdth=$(window).width();
-        if(btnWdth < 1350){
-            $('.rulebtn a:nth-of-type(11)').removeClass('nmar');
-            $('.rtable').addClass('flowX')
-        } else {
-            $('.rulebtn a:nth-of-type(11)').addClass('nmar');
-            $('.rtable').removeClass('flowX')
-        }
-    });
-})
-
 //籃球規則頁面切換
 $(function(){
     $('.bask button:nth-of-type(1)').click(function(){
@@ -284,22 +270,22 @@ $(function(){
 //   }  );
 // })
 
-// function isMobile() {
+function isMobile() {
 
-//     try{ document.createEvent("TouchEvent"); return true; }
+    try{ document.createEvent("TouchEvent"); return true; }
   
-//     catch(e){ return false;}
+    catch(e){ return false;}
 
-// }
+}
 
-// if(isMobile()){
-//     if(localStorage.getItem('mobile') == 1){return} //不跑
-//     window.location.href = "./rwdNav.html";
-//     if(window.location.href.indexOf("index") > 0 ){
-//         window.location.href = "./html/rwdNav.html";
-//     };
-//     localStorage.setItem('mobile', 1); //mobile == 1 手機板
-// }
+if(isMobile()){
+    if(localStorage.getItem('mobile') == 1){return} //不跑
+    window.location.href = "./rwdNav.html";
+    if(window.location.href.indexOf("index") > 0 ){
+        window.location.href = "./html/rwdNav.html";
+    };
+    localStorage.setItem('mobile', 1); //mobile == 1 手機板
+}
 
 function isMobileDevice(){
     var mobileDevices = ['Android', 'webOS', 'iPhone', 'iPad', 'iPod', 'BlackBerry', 'Windows Phone']

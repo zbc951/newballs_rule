@@ -210,7 +210,7 @@ html {
           overflow-y: hidden;
           overflow-x: auto; }
           html body main article .rulebox.convert div::-webkit-scrollbar {
-            height: 0px; }
+            height: 12px; }
           html body main article .rulebox.convert div::-webkit-scrollbar-thumb {
             background: #556de7;
             border-radius: 30px; }
@@ -241,7 +241,7 @@ html {
             width: 100%;
             border-bottom: solid 1px #d2d2d2; }
             html body main article .rulebox.balls .box .btnbar.longlen button {
-              width: 102px; }
+              width: 101px; }
             html body main article .rulebox.balls .box .btnbar button {
               margin: 25px 5px 15px 0px;
               width: 105px;
@@ -303,7 +303,7 @@ html {
               border-radius: 12px;
               margin-bottom: 15px; }
               html body main article .rulebox.balls .box .ballsrule .rtable::-webkit-scrollbar {
-                height: 0px; }
+                height: 12px; }
               html body main article .rulebox.balls .box .ballsrule .rtable::-webkit-scrollbar-thumb {
                 background: #556de7;
                 border-radius: 30px; }
@@ -311,17 +311,15 @@ html {
                 background: transparent;
                 background: #d6d6d6;
                 border-radius: 0px 0px 15px 15px; }
-              html body main article .rulebox.balls .box .ballsrule .rtable.overflow {
-                overflow-x: auto;
-                overflow-y: hidden; }
               html body main article .rulebox.balls .box .ballsrule .rtable table {
                 width: 1205px;
                 height: auto;
-                border-radius: 12px;
+                border-radius: 10px 10px 0px 0px;
                 font-size: 15px;
                 overflow: hidden; }
                 html body main article .rulebox.balls .box .ballsrule .rtable table tr th, html body main article .rulebox.balls .box .ballsrule .rtable table tr td {
-                  vertical-align: middle; }
+                  vertical-align: middle;
+                  word-break: break-all; }
                 html body main article .rulebox.balls .box .ballsrule .rtable table.normal tr {
                   text-align: center; }
                   html body main article .rulebox.balls .box .ballsrule .rtable table.normal tr th {
@@ -396,7 +394,7 @@ html {
           color: #4d515d;
           line-height: 24px; }
           html body main article .rulebox p.lastP {
-            padding-bottom: 20px; }
+            padding-bottom: 40px; }
           html body main article .rulebox p.wd_red {
             color: #ff0000; }
     @media only screen and (max-width: 1349px) {
@@ -525,18 +523,10 @@ html {
             top: 0px;
             border: none; }
             html body nav .title div a::before {
-              content: "";
-              position: absolute;
-              width: 20%;
-              height: 20%;
-              border-style: solid;
-              border-color: transparent transparent #4d4d4d #4d515d;
-              border-radius: 5px 0px 5px 0px;
-              left: 40%;
-              top: 50%;
-              -webkit-transform: translateY(-50%) rotate(45deg);
-              -ms-transform: translateY(-50%) rotate(45deg);
-              transform: translateY(-50%) rotate(45deg); }
+              top: 30%;
+              -webkit-transform: rotate(180deg);
+              -ms-transform: rotate(180deg);
+              transform: rotate(180deg); }
       html body nav a {
         display: block;
         width: 100%;
@@ -547,16 +537,15 @@ html {
         html body nav a::before {
           content: "";
           position: absolute;
-          width: 6px;
-          height: 6px;
-          border-style: solid;
-          border-color: #4d4d4d #4d4d4d transparent transparent;
-          border-radius: 5px 0px 5px 0px;
+          width: 15px;
+          height: 15px;
+          background: url("../images/arrow.png") no-repeat;
+          background-size: 100%;
           right: 10%;
           top: 50%;
-          -webkit-transform: translateY(-50%) rotate(45deg);
-          -ms-transform: translateY(-50%) rotate(45deg);
-          transform: translateY(-50%) rotate(45deg); }
+          -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%); }
         html body nav a p {
           position: absolute;
           top: 50%;

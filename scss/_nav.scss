@@ -56,16 +56,8 @@ nav {
                 top: 0px;
                 border: none;
                 &::before {
-                    content: "";
-                    position: absolute;
-                    width: 20%;
-                    height: 20%;
-                    border-style: solid;
-                    border-color: transparent transparent #4d4d4d #4d515d;
-                    border-radius: 5px 0px 5px 0px;
-                    left: 40%;
-                    top: 50%;
-                    transform: translateY(-50%) rotate(45deg);
+                    top: 30%;
+                    transform: rotate(180deg);
                 }
             }
         }
@@ -80,14 +72,13 @@ nav {
         &::before {
             content: "";
             position: absolute;
-            width: 6px;
-            height: 6px;
-            border-style: solid;
-            border-color: #4d4d4d #4d4d4d transparent transparent;
-            border-radius: 5px 0px 5px 0px;
+            width: 15px;
+            height: 15px;
+            background: url('../images/arrow.png') no-repeat;
+            background-size: 100%;
             right: 10%;
             top: 50%;
-            transform: translateY(-50%) rotate(45deg);
+            transform: translateY(-50%);
         }
         p {
             position: absolute;
