@@ -270,18 +270,20 @@ $(function(){
 //   }  );
 // })
 
-function isMobileDevice() {
-    const mobileDevice = ['Android', 'webOS', 'iPhone', 'iPad', 'iPod', 'BlackBerry', 'Windows Phone']
-    let isMobileDevice = mobileDevice.some(e => navigator.userAgent.match(e))
-    return isMobileDevice
-}
+// function isMobileDevice() {
+//     const mobileDevice = ['Android', 'webOS', 'iPhone', 'iPad', 'iPod', 'BlackBerry', 'Windows Phone']
+//     let isMobileDevice = mobileDevice.some(e => navigator.userAgent.match(e))
+//     return isMobileDevice
+// }
+
+// $(function(){
+//     if(isMobileDevice() == 1){
+//         window.location.href = "../html/rwdNav.html";
+//     };
+// })
 
 $(function(){
-    if(isMobileDevice() == 1){
-        if(localStorage.getItem('mobile') == 1){return}
-        if(window.location.href.indexOf("index") > 0 ){
-            window.location.href = "../html/rwdNav.html";
-        };
-        localStorage.setItem('mobile', 1);
+    if(window.location.href.indexOf('#') > 0 ){
+        $('body').addClass('ffff')
     };
 })
