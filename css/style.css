@@ -364,7 +364,8 @@ html {
                     padding: 8px 0px 8px 50px;
                     position: relative;
                     background: #f0b37d;
-                    color: #fff; }
+                    color: #fff;
+                    border-radius: 12px 12px 0px 0px; }
                     html body main article .rulebox.balls .box .ballsrule .rtable table.demo tr th::before {
                       content: "";
                       position: absolute;
